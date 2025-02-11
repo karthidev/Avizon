@@ -1,0 +1,564 @@
+/* Custom Styles for Avizon IT Services */
+
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header .logo p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 60px 20px;
+    background-color:#222;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: slideIn 2s ease-out;
+}
+
+
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1.1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color:#2EB6AE;;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+form button:hover {
+    background-color:black;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    header .logo h1 {
+        font-size: 2em;
+    }
+
+    header .logo p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+
+    .service-card {
+        margin-bottom: 15px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    form input, form textarea {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.6em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .service-card h3 {
+        font-size: 1.4em;
+    }
+
+    .service-card p {
+        font-size: 1em;
+    }
+
+    form button {
+        font-size: 1em;
+    }
+}
+
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url('images/service.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: #fff;
+}
+
+.hero-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1; /* Below the text */
+}
+
+.hero-content h2, .hero-content p {
+    position: relative;
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+
+
+
+
+
+/* Header Container */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px; /* Adjust the padding for height */
+    background-color: #333;
+    color: #fff;
+    height: 80px; /* Set the height of the header */
+}
+
+/* Logo Styles */
+header .logo h1 {
+    font-size: 30px; /* Adjust the font size of the logo title */
+}
+
+/* Logo Tagline (Paragraph) */
+header .logo p {
+    font-size: 16px; /* Adjust the font size */
+    margin-top: 5px;
+}
+
+
+/* Navigation Bar */
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-left: 25px; /* Adjust the space between navigation items */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Adjust the font size of the navigation links */
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f39c12; /* Optional hover effect */
+}
+
+
+
+
+
+
+.service-card {
+    margin-bottom: 20px;
+    width: auto;
+    text-align: center;
+}
+
+.service-image {
+    width: 100%;  /* Image takes up 100% of its container's width */
+    height: 200px;  /* Fixed height for uniformity */
+    object-fit: cover;  /* Ensures the image fills the container without distortion */
+    margin-bottom: 15px;
+}
+
+
+
+
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* This will center the content, including the image */
+    justify-content: center;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 1000px;  /* Adjust this value to your preference */
+    height: 500px;
+    margin: 20px 0;
+    display: block;  /* Makes the image behave like a block element */
+    margin-left: auto;  /* Align to the left */
+    margin-right: auto;  /* Align to the right */
+}
+
+
+
+
+
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contact Info in Footer */
+.footer-content .contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-content .contact-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-content .contact-info p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.contact-info {
+    line-height: 3;
+}
+
+.social-links a{
+    color: #2EB6AE;
+    list-style: none;
+}
+
+.social-links a:hover{
+    color:lightgreen;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #333;
+    color: #fff;
+    height: 80px;
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;  /* Align logo image and text */
+}
+
+.logo h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;  /* Stack the logo and navigation vertically */
+        text-align: center;
+        height: auto; /* Allow the header to grow vertically */
+        padding: 15px 20px;
+    }
+
+    .logo h1 {
+        font-size: 2em;  /* Make the logo text smaller on mobile */
+    }
+
+    .logo p {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;  /* Stack navigation items vertically */
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;  /* Add space between the items */
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.8em;  /* Adjust logo size further on smaller screens */
+    }
+
+    .logo p {
+        font-size: 13px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;  /* Centers the list items horizontally */
+}
+
+
+.footer-links ul li {
+    margin: 0 15px;  /* Adds space between the items */
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.0em;
+}
+
+.footer-links ul li a:hover {
+    color: #f39c12; /* Optional hover effect */
+}
+
+.logo_link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.0em;
+
+}
+
+
+
+
+
+/* Inactive menu items (default state) */
+nav ul li a {
+    color: #fff;  /* White color for inactive links */
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #f39c12;  /* Change color on hover */
+}
+
+/* Active menu item */
+nav ul li a.active {
+    color: #f39c12;  /* Highlight the active link */
+    font-weight: bold;
+}
+
+
+.about p {
+    font-size: 1.1em;
+}
